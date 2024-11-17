@@ -1,10 +1,10 @@
 {
   "title": "Sharpless 2-188 - Shrimp Nebula",
-  "uploadDate": 1731666161,
+  "uploadDate": 1723414320000,
   "integrationType": "SHOLRGB",
   "wrapper": "sh2_188/sh2_188_main.jpg",
   "specs": {
-    "totalIntegration": 36000,
+    "totalIntegration": 36600,
     "calibrations": "Flats, Dark Flats, Darks",
     "binning": 2,
     "temp": -12,
@@ -25,6 +25,13 @@
         "count": 20
       }
     ]
+  },
+  "astrobin": {
+    "astrobinIotd": "Astrobin Image of the Day on 26 Oct 2024",
+    "astrobinTitle": "Sharpless 2-188 (Sh2-188) Planetary Nebula in HOO ",
+    "astrobinTopPick": false,
+    "astrobinMention": false,
+    "astrobinUrl": "https://www.astrobin.com/q3q8rt/"
   },
   "gallery": [
     "sh2_188/sh2_188_main.jpg",
@@ -63,7 +70,7 @@
   ],
   "equipment": [
     {
-      "name": "Tetlescope",
+      "name": "Telescope",
       "description": "Newtonian 10” - Sky-Watcher Explorer 250PDS, 250mm aperture, 1200mm focal length, f/4.7 focal ratio"
     },
     {

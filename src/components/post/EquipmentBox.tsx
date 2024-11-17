@@ -1,9 +1,9 @@
 import React from "react";
 import {Box, Typography} from "@mui/material";
-import {Equipment} from "../../types/equipment.types";
+import {PostEquipmentInfo} from "../../types/postEquipmentInfo";
 
 const EquipmentBox: React.FC<{
-    equipment: Array<Equipment> | null,
+    equipment: Array<PostEquipmentInfo> | null,
 }> = ({equipment}) => {
 
     if (equipment == null) {

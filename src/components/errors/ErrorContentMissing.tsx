@@ -1,6 +1,5 @@
 import React from "react";
 import {Box, Typography} from "@mui/material";
-import {Equipment} from "../../types/equipment.types";
 
 const ErrorContentMissing: React.FC = () => {
     return (

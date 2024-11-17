@@ -1,4 +1,4 @@
-export interface Equipment{
+export interface PostEquipmentInfo {
     name: string,
     description: string
 }
