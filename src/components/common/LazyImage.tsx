@@ -1,12 +1,20 @@
 import {Box} from "@mui/material";
 import React, {useState} from "react";
 
-const LazyImage: React.FC<{ filename: string }> = ({filename}) => {
+const LazyImage: React.FC<{
+    filename: string
+    onClick?: (url: string) => void;
+}> = ({filename, onClick}) => {
 
     const [isLargeImageLoaded, setIsLargeImageLoaded] = useState(false);
 
     return (
         <Box
+            onClick={() => {
+                if (onClick) {
+                    onClick(`${process.env.PUBLIC_URL}/${filename}_small.jpg`);
+                }
+            }}
             sx={{
                 position: 'relative',
                 overflow: 'hidden'

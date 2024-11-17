@@ -6,8 +6,9 @@ import {Post} from "../../types/post.types";
 
 const PostContent: React.FC<{
     sx: SxProps<Theme>,
-    data: Post | null
-}> = ({sx, data}) => {
+    data: Post | null,
+    onImageClick?: (url: string) => void
+}> = ({sx, data, onImageClick}) => {
 
     return <Box
         sx={sx}
@@ -25,7 +26,9 @@ const PostContent: React.FC<{
                 switch (item.type) {
                     case 'header':
                         return (
-                            <ListItem disablePadding>
+                            <ListItem
+                                key={index + " " + item.type}
+                                disablePadding>
                                 <Typography
                                     key={index}
                                     color="#C0B4A3"
@@ -41,9 +44,10 @@ const PostContent: React.FC<{
                         );
                     case 'paragraph':
                         return (
-                            <ListItem disablePadding>
+                            <ListItem
+                                key={index + " " + item.type}
+                                disablePadding>
                                 <Typography
-                                    key={index}
                                     variant="body1"
                                     color="#C0B4A3"
                                     sx={{
@@ -56,13 +60,21 @@ const PostContent: React.FC<{
                         );
                     case 'image':
                         return (
-                            <ListItem disablePadding
+                            <ListItem
+                                key={index + " " + item.type}
+                                disablePadding
                                       sx={{
                                           paddingY: '0.6rem'
                                       }}>
                                 <CaptionedImage filename={item.filename ?? ""}
                                                 caption={"Negative image of Sharpless 2-188 Planetary Nebula"}
-                                                showEnlarge={true}/>
+                                                showEnlarge={true}
+                                                onClick={(url) => {
+                                                    if (onImageClick) {
+                                                        onImageClick(url);
+                                                    }
+                                                }}
+                                />
 
                             </ListItem>
                         );

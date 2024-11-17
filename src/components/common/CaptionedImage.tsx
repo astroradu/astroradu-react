@@ -6,14 +6,22 @@ const CaptionedImage: React.FC<{
     filename: string,
     caption: string
     showEnlarge: boolean,
-}> = ({filename, caption, showEnlarge}) => {
+    onClick?: (url: string) => void;
+}> = ({filename, caption, showEnlarge, onClick}) => {
 
     return (
         <Box
             sx={{
                 cursor: 'pointer'
             }}>
-            <LazyImage filename={filename}/>
+            <LazyImage
+                filename={filename}
+                onClick={(url) => {
+                    if (onClick) {
+                        onClick(url);
+                    }
+                }}
+            />
 
             <Box
                 display="flex"

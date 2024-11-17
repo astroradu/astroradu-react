@@ -10,6 +10,7 @@ import React, {useEffect, useState} from "react";
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 import NavBar from "./components/NavBar";
 import Portfolio from "./pages/Portfolio";
+// import 'react-image-lightbox/style.css';
 
 const App: React.FC = () => {
 

@@ -4,8 +4,6 @@ export function secondsToHoursAndMinutes(seconds: number): string {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
 
-    console.log(minutes);
-
     let result = "";
 
     if (hours > 0) {
@@ -21,8 +19,6 @@ export function exposureInfoToHoursAndMinutes(exposureInfo: PostExposureInfo): s
     const seconds = exposureInfo.time * exposureInfo.count
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
-
-    console.log(minutes);
 
     let result = "";
 
