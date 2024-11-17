@@ -1,0 +1,27 @@
+[
+  {
+    "type": "header",
+    "text": "Description"
+  },
+  {
+    "type": "paragraph",
+    "text": "With its one-sided, semicircular, filamentary gas structure, SH2-188 is a weak and unusual planetary nebula in the Cassiopeia Constellation. It  represents one of the most extreme examples of interstellar medium  contact, or how planetary nebulas interact with space. It is a good  candidate for examining ISM effects because of its large angular  dimension (in comparison to many oother such nebulae) and apparent high  proper motion. The central star of Sh2-188 is an evolved entity that has shed most of its material and is on the verge of transitioning into the white dwarf phase. Based on its age and structure, it is generally  thought to be an old planetary nebula. It is located at a distance of  around 850 light-years, close to Ruchbach Star and was photographed for  the first time in 1965 by Gaze V.F. and Shain G.A."
+  },
+  {
+    "type": "image",
+    "filename": "homepage",
+    "thumbnail": "homepage"
+  },
+  {
+    "type": "paragraph",
+    "text": "The data was acquired in the following dates:\u202806.08.2024, 07.08.2024, 10.08.2024, 11.08.2024, 05.09.2024, 06.09.2024, 07.09.2024, 08.09.2024, 09.09.2024, 13.09.2024 [dd/mm/yyyy]"
+  },
+  {
+    "type": "paragraph",
+    "text": "Location:\u2028Dâmbovița, Romania"
+  },
+  {
+    "type": "paragraph",
+    "text": " Processing details:\u2028Pixinsight - WBPP,  local normalization, DBE with GraXpert, SCNR, generalised  hyperbolic stretch, local histogram equalization, wavelet  transformation, HDR combination for the faint and bright regions of the  Ha, narrowband combination, narrowband normalization, selective color  correction, noise reduction with a blending between NXT, GraXpert  Denoise and Topaz Denoise for an ultra clean result. Sharepening and  detail enhancement was only performed by deconvolution with BXT and  wavelets.\u2028Stars were processed separately, SXT, SCNR, morphological  transformation to fix saturated star cores typical for Newtonian,  lightness reduction by iterative stretching and deconvolution, selective color saturation. Small final touches, crop and export from Photoshop.\n "
+  }
+]
